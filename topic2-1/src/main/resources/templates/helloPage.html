@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://thymeleaf.org">
+	
+	<head>
+		<title>Hello</title>
+		<style>
+			* {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			
+			h1 {
+				color: blue;
+			}
+			
+			.subtitle {
+				font-style: italic;
+			}
+			
+			.title_box {
+				border: 2px solid black;
+				border-radius: 5px;
+				width: fit-content;
+				padding: 0.5rem;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="title_box">
+			<h1 th:text = "${message}">Hello World!</h1>
+		</div>
+		<p class="subtitle">Lorem ipsum dolor sit amet</p>
+		<p>Rating: <span th:text="${rating}">5</span></p>
+		<p th:text="${report}">Report should be here.</p>
+	</body>
+	
+</html>
